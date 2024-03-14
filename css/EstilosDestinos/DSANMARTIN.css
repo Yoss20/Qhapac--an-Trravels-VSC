@@ -1,0 +1,221 @@
+
+
+#slider {
+  margin: auto;
+  margin-top: 130px;
+  height: 500px;
+  width: 1000px;
+  max-width: 100%;
+  text-align: center;
+}
+
+  
+  #slider input[type=radio] {
+    display: none;
+  }
+  
+  #controls label {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  #slides {
+    width: 100%; /* Ocupa el ancho completo del contenedor padre */
+    max-width: 100%; /* Evita que el contenedor se desborde del padre */
+
+    padding: 10px;
+    border: 3px solid #fff;
+    background: #043b5f85;
+    position: relative;
+    z-index: 1;
+  }
+
+  #overflow {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  #slide45:checked ~ #slides .inner {
+    margin-left: 0;
+  }
+  
+  #slide46:checked ~ #slides .inner {
+    margin-left: -100%;
+  }
+  
+  #slide47:checked ~ #slides .inner {
+    margin-left: -200%;
+  }
+  
+  #slide48:checked ~ #slides .inner {
+    margin-left: -300%;
+  }
+  
+  #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 400px;
+  }
+  
+  .slide {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+  }
+  
+  .slide-content h2 {
+    font-size: 90px;
+  }
+  
+  .slide_45 {
+    background: linear-gradient(rgba(8, 44, 26, 0.465), 
+    rgba(8, 44, 26, 0.465)), url("../../imagenes/imgDestinos/img/QÑT.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .slide_46 {
+    background: url(../../imagenes/imgDestinos/TARAPOTO.png);
+   background-repeat: no-repeat;
+
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  
+  .slide_46 img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide_47 {
+    background: url(../../imagenes/imgDestinos/CATARATA\ DE\ AHUASHICAYU.png);
+    background-repeat: no-repeat;
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .slide_47 img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide_48 {
+    background: url(../../imagenes/imgDestinos/RESERVA\ NACIONAL\ DE\ PACAYA.png);
+    background-repeat: no-repeat;
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .slide_48 img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #controls {
+    margin: -230px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+  }
+  
+
+
+
+  #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: 0.4;
+  }
+  
+  #controls label:hover {
+    opacity: 1;
+  }
+  
+  #slide45:checked ~ #controls label:nth-child(2),
+  #slide46:checked ~ #controls label:nth-child(3),
+  #slide47:checked ~ #controls label:nth-child(4),
+  #slide48:checked ~ #controls label:nth-child(1) {
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), url("Imagenes/derecha.png") no-repeat;
+    float: right;
+    margin: 0 -76px 0 0;
+    display: block;
+  }
+  
+  #slide45:checked ~ #controls label:nth-last-child(2),
+  #slide46:checked ~ #controls label:nth-last-child(3),
+  #slide47:checked ~ #controls label:nth-last-child(4),
+  #slide48:checked ~ #controls label:nth-last-child(1) {
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)), url("Imagenes/izquierda.png") no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+  }
+  
+  #bullets {
+    margin: 200px 0 0;
+    text-align: center;
+  }
+  
+  #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+  }
+  
+  #slide45:checked ~ #bullets label:nth-child(1),
+  #slide46:checked ~ #bullets label:nth-child(2),
+  #slide47:checked ~ #bullets label:nth-child(3),
+  #slide48:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+  }
+  
+   @media screen and (max-width: 900px) {
+      #slide45:checked ~ #controls label:nth-child(2),
+      #slide46:checked ~ #controls label:nth-child(3),
+      #slide47:checked ~ #controls label:nth-child(4),
+      #slide48:checked ~ #controls label:nth-child(1),
+      #slide45:checked ~ #controls label:nth-last-child(2),
+      #slide46:checked ~ #controls label:nth-last-child(3),
+      #slide47:checked ~ #controls label:nth-last-child(4),
+      #slide48:checked ~ #controls label:nth-last-child(1) {
+         margin: 0;
+      }
+      
+#slides {
+  width: 100%; /* Ocupa el ancho completo del contenedor padre */
+  max-width: 100%; /* Evita que el contenedor se desborde del padre */
+}
+
+.slide_46,
+.slide_47,
+.slide_48 {
+background-size: 100% 100%;
+}
+
+   }
+  
+   .slide-content img{
+      width: 200px;
+      height: 200px;
+      justify-content: left;
+   }
+  
+  

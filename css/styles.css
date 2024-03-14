@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wgth@300;400;500;600;700:800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../Login/img/FondoRegistro.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 750px;
+    background: rgba(0, 0, 0, 0.216);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 40px 35px 55px;
+    margin: 0 10px;
+}
+
+.wrapper h1{
+ background-color: transparent;
+ font-size: 46px;
+ color:#ffffff;
+ text-align: center;
+ margin-bottom: 20px;
+ border: 2px solid rgba(255, 255, 255, .2);
+ border-radius: 6px; 
+ 
+} 
+
+.wrapper .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.input#fecha{
+    display: none;
+}
+
+
+#consultar {
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    background: #ffffff !important;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    
+}
+
+#consultar:hover {
+    cursor: pointer;
+    background: #00fffb;
+    color: #000000;
+}
+
+
+
+/* Estilos para todos los campos de entrada y el combobox */
+.input-box .input-field {
+    position: relative;
+    width: 48%;
+    height: 50px;
+    margin: 13px 0;
+    
+}
+.input-box .input-field select {
+
+    color: #333; /* Cambia el color de texto de las opciones */
+    background: #fff; /* Cambia el color de fondo de las opciones */
+}
+
+/* Cambia el color de texto de las opciones cuando se seleccionan */
+.input-box .input-field select option {
+    color: #000000; /* Cambia el color de texto de las opciones seleccionadas */
+}
+
+
+.input-box .input-field input, .input-box .input-field select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px 15px 15px 40px;
+}
+
+.input-box .input-field input::placeholder, .input-box .input-field select::placeholder {
+    color: #fff;
+}
+
+.input-box .input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+
+.wrapper label {
+    display: inline-block;
+    font-size: 14.5px;
+    margin: 10px 0 23px;
+}
+
+.wrapper label input {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .btn[type="submit"]:hover {
+    cursor: pointer;
+    background: #00fffb;
+    color: #000000;
+  }
+
+@media (max-width: 520px) {
+    .input-box .input-field { 
+        width: 100%;
+        margin: 10px 0;
+    
+    }
+
+}
+
+.error-message {
+    display: none;
+    font-size: large;
+    color: red;
+    margin-top: 10px;
+    text-shadow: 0 0 5px #ffffff
+}
+
+.mensaje1 {
+    display: none;
+    color: rgb(51, 255, 0);
+    margin-top: 10px;
+}
+
+
+.input-box .input-field input[type="number"]::-webkit-inner-spin-button,
+.input-box .input-field input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.wrapper label a {
+    color: #fff; /* Cambia el color del texto del enlace a blanco */
+    transition: color 0.3s; /* Agrega una transición de color suave */
+}
+
+.wrapper label a:hover {
+    color: #00fffb; /* Cambia el color del texto del enlace a celeste al pasar el cursor sobre él */
+}
+
+#logo-button {
+    position: fixed;
+    top: -5px;
+    left: 10px;
+    width: 150px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Esto mantendrá la proporción original del logo */
+    cursor: pointer;
+  }
+
+
+

@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 97.5vh;
+  background: url(../login/css/bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#mi-imagen,
+#mi-animacion,
+#mi-animacion1 {
+  width: 225px;
+  height: 190px;
+  border-radius: 0%;
+  position: fixed;
+  top: -23%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Centra en la ventana */
+}
+
+.login-box {
+  width: 320px;
+  height: 420px;
+  background: rgba(255, 255, 255, .1);
+  border: 2px solid rgba(255, 255, 255, .2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  color: #ffffff;
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+  font-size: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #00fffb;
+  color: #000000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.login-box a:hover {
+  color: #000000;
+}
+
+.error-message {
+  display: block;
+  font-size: large;
+  color: rgb(249, 106, 63);
+  margin-top: -5px;
+  text-shadow: 0 0 5px #ffffff7c;
+}
+
+#logo-button {
+  position: fixed;
+  top: -5px;
+  left: 10px;
+  width: 150px; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Esto mantendrá la proporción original del logo */
+  cursor: pointer;
+}
+

@@ -1,0 +1,47 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../Login/img/FondoRegistro.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Estilo para el encabezado (título) */
+  h1 {
+    text-align: center;
+    font-size: 34px;
+    color: #000000;
+    margin-top: 20px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    margin-top: 20px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    margin-top: 20px;
+  }
+  /* Estilo para el párrafo de contenido */
+  p {
+    margin: 20px;
+    padding: 10px;
+    background-color: #00000072;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.27);
+    font-size: 16px;
+    color: #ffffff;
+    text-align: justify;
+  }
+  
+  /* Estilo para el contenedor principal */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

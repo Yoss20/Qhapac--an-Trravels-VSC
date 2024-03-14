@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Estilos.css">
+    <script src="Banner.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+</head>
+<body class="fondo"> 
+    <div class="contenedor">
+        <header class="Cabecera">
+            <div class="header">
+        
+                <div class="logo"><img src="Imagenes/LOGO TERMINADO.png" alt="Logo de la Compañia" /></div>
+                <input type="checkbox" id="toggle">
+    
+                <label for="toggle"><img class="menu" src="Imagenes/menu.png" alt="menu"></label>
+    
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="/index.html">INICIO</a></li>
+                        <li><a href="/VentanaDestino/HDestino.html">DESTINOS</a></li>
+                        <li><a href="/VentanaReserva/reserva.html">RESERVAS</a></li>
+                        <li><a href="/VentanaPromociones/promociones.html">PROMOCIONES</a></li>
+                        <li><a href="/VentanaEmpresa/Empresa.html">¿QUIENES SOMOS?</a>
+                            <ul>
+                                <li><a href="/VentanaEmpresa/Empresa.html">Qhapac Ñan Travels</a></li>
+                                <li><a href="/VentanaEquipo/NuestroEquipo.html">Nuestro Equipo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/VentanaContactanos/Contactanos.html">CONTÁCTANOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="banner">
+            <ul class="pasos">
+              <li>1. Selecciona tu vuelo
+                <i class="fas fa-chevron-right text-sm mr-3 ml-3"></i>
+              </li>
+              <li>2. Completa tus datos
+                <i class="fas fa-chevron-right text-sm mr-3 ml-3"></i>
+              </li>
+              <li>3. Finalizar la reserva
+              </li>
+            </ul>
+        </div>
+          
+        <div class="infoPasajero">
+           
+            <form>
+                <fieldset>
+                    <LEGEnd>PASAJERO N</LEGEnd>
+                    <div class="field-holder">
+                        <input class="inputP" type="text" id="nombre" required>
+                        <label class="labelI" for="nombre">Ingrese sus nombres</label>
+                    </div>
+                    <div class="field-holder">
+                        <input class="inputP" type="text" id="apellido" required>
+                        <label class="labelI" for="apellido">Ingrese sus apellidos</label>
+                    </div>
+                    <div class="field-holder">
+                        <input class="inputP" type="text" id="dni" required>
+                        <label class="labelI" for="dni">Ingrese su DNI</label>
+                    </div>
+                </fieldset>
+            </form>
+         
+        </div>
+
+        
+        
+        <div class="InfoReserva">
+
+            <fieldset>
+                <LEGEnd>DETALLES</LEGEnd>
+                <div>
+                    <label class="labelID" for="FECHA">FECHA</label>
+                    <input class="inputPD" type="text" id="FECHA" required>
+                </div>
+                <div>
+                    <label class="labelID" for="HORA">HORA</label>
+                    <input class="inputPD" type="text" id="HORA" required>
+                </div>
+                <div>
+                    <label class="labelID" for="ORIGEN">ORIGEN</label>
+                    <input class="inputPD" type="text" id="ORIGEN" required>
+                </div>
+                <div>
+                    <label class="labelID" for="DESTINO">DESTINO</label>
+                    <input class="inputPD" type="text" id="DESTINO" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <LEGEnd>COSTO TOTAL</LEGEnd>
+                <div>
+                    <label class="labelID" for="PASAJEROS">PASAJEROS</label>
+                    <input class="inputPD" type="text" id="PASAJEROS" required>
+                </div>
+                <div>
+                    <label class="labelID" for="MOVILIDAD">MOVILIDAD</label>
+                    <input class="inputPD" type="text" id="MOVILIDAD" required>
+                </div>
+                <div>
+                    <label class="labelID" for="ALIMENTOS">ALIMENTOS</label>
+                    <input class="inputPD" type="text" id="ALIMENTOS" required>
+                </div>
+                <div>
+                    <label class="labelID" for="HOSPEDAJE">HOSPEDAJE</label>
+                    <input class="inputPD" type="text" id="HOSPEDAJE" required>
+                </div>
+                <div>
+                    <label class="labelID" for="PAQUETE_TURISTICO">PAQUETE TURISTICO</label>
+                    <input class="inputPD" type="text" id="PAQUETE_TURISTICO" required>
+                </div>
+              
+                <div>
+                    <label class="labelID" for="TOTAL">TOTAL</label>
+                    <input class="inputPD" type="text" id="TOTAL" required>
+                    
+                </div>
+            </fieldset>
+
+        </div>
+
+        
+   
+
+    <footer>
+        <div class="footer-links-left">
+            <h3>Información</h3>
+            <ul>
+            <li><a href="/codigo-de-etica">Código de ética</a></li>
+            <li><a href="/libro-de-reclamaciones">Libro de reclamaciones</a></li>
+            <li><a href="/documentos">Documentos</a></li>
+            <li><a href="/peticiones-quejas-reclamos">Consulta de peticiones, quejas o reclamos</a></li>
+            <li><a href="/agentes-de-viajes">Agentes de viajes</a></li>
+            <li><a href="/eventos">Eventos</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            </ul>
+        </div>
+        <h3>Contactanos</h3>
+        <br />
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/profile.php?id=61551098888038" target="_blank"><img src="/imagenes/Facebook.png" width="185" height="185" ></a></li>
+            <li><a href="https://wa.me/51951267834" target="_blank"><img src="/imagenes/WhatsApp.png" width="185" height="185"></a></li>
+            <li><a href="https://www.instagram.com/qhapacnantravels/" target="_blank"><img src="/imagenes/Instagram.png" width="185" height="185" ></a></li>
+        </ul>
+    
+        
+    
+        <br />
+        <div class="copyright">
+        <h4>&copy; 2023 Qhapac Ñan Travels. Todos los derechos reservados.</h4>
+        <br />
+        <br />
+        <div class="footer-links">
+            <a href="/">Inicio</a> |
+            <a href="/terminos">Términos y condiciones</a> |
+            <a href="/privacidad">Política de privacidad</a>
+        </div>
+        </footer>
+
+
+
+    </div>
+
+    <script src="InfoPasajero.js"></script>
+</body>
+</html>

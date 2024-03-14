@@ -1,0 +1,1274 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,600;0,700;1,500;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?display=swap');
+
+body{
+    /* font-family: 'Poppins', sans-serif; */
+
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Bebas Neue', sans-serif;
+    min-height: 100vh;
+    /* background-color: #252c2ce5; */
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)),
+        url("../imagenes/fondovuelos2.jpg");
+        position: relative;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+/*
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+
+.menu{
+    color: #fff;
+    transition: background-color 0.3s; /* Agregar una transición para el cambio de color de fondo */
+    z-index: 100; /* Asegurarse de que esté por encima del contenido */
+    display: flex;
+    flex-direction: column;
+}
+.encabezado_cont {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    transition: var(--transition);
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+    /* padding: 1px 0; */
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end; /* Para alinear los elementos a la derecha */
+  }
+
+  .menu__links0 {
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+    gap: 20px; /* Espacio de separación horizontal */
+  }
+
+  .menu__item0 {
+    list-style: none;
+    position: relative;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+  }
+
+  .menu__item0:hover {
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
+  }
+
+  .menu__link0 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+
+    /* font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    display: flex;
+    height: 100%;
+    align-items: center; */
+  }
+
+  .menu__link0:hover{
+    color: #01102e;
+}
+
+ .menu_link0 .menu__item0:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scale(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.menu_link0 .menu__item0:hover :after{
+    transform: scale(1);
+    transform-origin: bottom left;
+}
+
+
+
+.menu_cont{
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    top: 60px;
+    height: 40px;
+  padding-block: 20px;
+  margin-left: -10px;
+  z-index: 9999;
+
+}
+
+.menu_cont .logo{
+    display: flex;
+}
+
+.menu_cont .logo img{
+    height: 120px;
+    margin-left: 50%;
+}
+
+.menu__links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+}
+
+.menu__item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+
+.menu__item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
+}
+
+.menu__link{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    /* gap: 50px;
+    list-style: none; */
+}
+
+.menu__link:hover{
+    color: #001e2c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* padding: 0 20px 0 20px;
+    background-color: rgba(255, 255, 255, 0.2); */
+
+}
+
+ .menu_link .menu__item:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scale(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.menu_link .menu__item:hover :after{
+    transform: scale(1);
+    transform-origin: bottom left;
+}
+
+
+.menu__arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+
+/* .cont_btn{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+} */
+
+.btn {
+    font-family: 'Bebas Neue', sans-serif;
+background-color: #001e2c; /* Cambia el color de fondo a tu elección */
+color: #fff; /* Cambia el color del texto a tu elección */
+border: none;
+border-radius: 5px; /* Aplica un borde redondeado */
+padding: 10px 20px; /* Ajusta el espaciado interno para la forma y el tamaño */
+font-size: 20px; /* Tamaño del texto */
+   cursor: pointer;
+margin-left: 10px; /* Alinea el botón a la izquierda y agrega margen entre el menú y el botón */
+
+}
+.btn:hover {
+    background-color: #ffffff; /* Cambia el color de fondo a tu elección */
+color: #001e2c;
+}
+
+.menu__nesting{
+    /* top: 5px; */
+    list-style: none;
+    transition:clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 5px;
+    bottom: -20px;
+    width: max-content;
+    transform: translateY(100%);
+
+}
+
+.menu__nesting:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu__link--inside{
+    padding: 20px 20px 20px 0px;
+}
+
+.menu__link--inside:hover{
+    color: #001e2c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu__hamburguer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__img{
+    display: block;
+    width: 36px;
+}
+
+@media (max-width:800px){
+    .menu__hamburguer{
+        display: flex;
+    }
+
+    .menu__item{
+        --clip:0;
+        overflow:hidden ;
+    }
+
+    .menu__item--active{
+        --transform: rotate(0);
+        --background: #5e7094;
+    }
+
+    .menu__item--show{
+        background-color: var(--background);
+    }
+
+
+    .menu__links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+
+    .menu__links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
+}
+
+
+.header{
+
+    background-color: #032b55a4;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0% 6%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 132px;
+        padding: 0.8rem;
+
+
+}
+
+.header-content{
+    display: flexbox;
+    flex-direction: column;
+}
+
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Coloca los botones en los extremos */
+    gap: 2px; /* Espacio entre los botones */
+  }
+
+  .option-btn {
+    /*background-color: #032a55; /* Color de fondo de los botones */
+    background: rgba(255, 255, 255, 0.8);
+    color: #221f1f; /* Color del texto */
+    border: none;
+    /* border-radius: 5px; */
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .option-btn:hover {
+    background-color: #032b55a4; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff;
+
+  }
+
+  .avion, .hotel, .lupa {
+    margin-left:0cqmax;
+    margin-right: 15px;
+  }
+
+
+  .header-form{
+    margin-top: -16px;
+    /* margin-right: 190px; */
+    background: rgba(255, 255, 255, 0.6);
+    padding: 1.9rem;
+    text-align: justify;
+    }
+
+    .header-form h1{
+        font-size: 15px;
+        color: #1d1b1b;
+        -webkit-text-stroke: 0.5px #131212;
+        margin-top: -25px;
+        margin-bottom:  40px;
+        margin-left: -20px;
+
+    }
+
+    .header-form h2{
+        font-size: 11px;
+        color: #464141;
+        font-family: 'Sometype Mono', monospace;
+        margin-top: -30px;
+        margin-bottom:  15px;
+        margin-left: -20px;
+
+    }
+
+    .tipoViaje{
+        font-size: 14px;
+        color: #252121;
+        margin-top: -70px;
+        margin-bottom: 8px;
+        margin-left: -20px;
+        background: transparent;
+        /* border: 4px solid #f00; */
+        border: 0;
+
+      }
+
+
+    .flex_SOLOIDA{
+        display: none;
+        flex-direction: row;
+        width: 100%;
+        gap: 4px;
+        margin-left: -20px;
+        margin-bottom:  -15px;
+    }
+
+    .flex_IDAYVUELTA{
+        display: flex;
+        /* display: flex; */
+        flex-direction: row;
+        width: 100%;
+        gap: 4px;
+        margin-left: -20px;
+        margin-bottom:  -15px;
+    }
+
+    .flex_cont{
+        background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 20px 20px 10px 20px;
+  /* border: 1px solid #000; */
+    }
+
+    .flex_cont11, .flex_cont22{
+        width: 190px;
+    }
+
+    .flex_cont33{
+        width: 130px;
+    }
+
+    .flex_cont44{
+        width: 180px;
+    }
+
+    .form_control {
+        width: 20px;
+    height: 50px;
+    }
+
+
+  /* Estilos para .flex_cont */
+  .flex_cont1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  }
+
+  .flex_cont img {
+    width: 25px;
+    margin-right: 1px; /* Ajusta el espacio entre la imagen y el input */
+    margin-left: -15px;
+  }
+
+  /* Estilos para el título dentro de .flex_cont */
+  .flex_cont h3 {
+    /* text-align-last: center; */
+    margin-top: -10px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    font-size: 12px;
+    color: #464141;
+  }
+
+
+ .header-form input[type = "date"]{
+    text-transform: uppercase;
+}
+.header-form input:not([type = "submit"])::-webkit-input-placeholder{
+    color: #2b2525;
+}
+.header-form input:not([type = "submit"])::-moz-placeholder{
+    color: #2b2525;
+}
+.header-form input:not([type = "submit"]):-ms-input-placeholder{
+    color: #2b2525;
+}
+.header-form input:not([type = "submit"])::-ms-input-placeholder{
+    color: #2b2525;
+}
+.header-form input:not([type = "submit"])::placeholder{
+    color: #2b2525;
+} */
+::-webkit-calendar-picker-indicator{
+    -webkit-filter: invert(1);
+            filter: invert(1);
+}
+
+.btnIda, .btnIdayVuelta{
+    display: flex;
+    align-items: center;
+}
+
+  .btnI, .btnIV{
+    display: flex;
+    flex-direction: row;
+    background: rgba(5, 2, 49, 0.99);
+    color: #ffffff; /* Color del texto */
+    padding: 10px 10px 5px 10px;
+     border: none;
+     border-radius: 10px;
+     font-size: 16px;
+     text-align: start;
+     top: -10px;
+     text-align: center;
+
+  }
+
+  .btnI:hover, .btnIV:hover{
+    background-color: #cad1daa4;
+    color: #0f0f0f;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .Reserva{
+    display: none;
+    width: 100%; 
+    justify-content: center;
+    transition: box-shadow 1h;
+  }
+
+  /*menu paso reserva*/
+
+  .pasosreserva_cont{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .info1{
+    display: flex;
+  }
+
+  .info2{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info1text{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #01102e;
+    font-size: 25px;
+    margin-bottom: 2px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+  }
+
+  .info2text{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #01102e;
+    font-size: 25px;
+    margin-bottom: 2px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+  }
+
+  .RutaVuelo{
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    /* margin-top: -150px;
+    margin-bottom: 15px; */
+  }
+
+  .pasosreserva {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* margin-left: 30px; */
+
+  }
+
+  .pasosreserva li {
+    /*flex: 1; /* Divide el espacio horizontalmente entre los elementos */
+    text-align: end; /* Alinea el texto al centro del elemento */
+    margin: 10px 5px; /* Agrega un margen horizontal entre los elementos */
+    margin-left: 5px;
+  }
+
+  .reserva__link1, .reserva__link2, .reserva__link3{
+    text-decoration: flex; /* Elimina el subrayado de los enlaces */
+    color: #333333; /* Cambia el color del texto a tu elección */
+    margin-bottom: -30px;
+    align-items: flex-start;
+  }
+
+
+  .arrow2, .arrow20 {
+    margin-left: 15px; /* Agrega un margen izquierdo a la flecha si es necesario */
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: -7px;
+  }
+
+  .arrow20{
+    opacity: 0.0;
+  }
+
+
+
+/*pasos 1 de reserva*/
+
+  .selecVueloI{
+    width: 90%;
+    margin-left: 40px;
+  }
+
+  .selecVueloIV{
+    width: 90%;
+    margin-left: 40px;
+    display: none;
+  }
+
+  .VuelDispoIDA{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    margin-top: 15px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.8);
+    border-radius: 10px;
+  }
+
+  .VuelDispoIDAVUELTA{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    margin-top: 15px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.8);
+    border-radius: 10px;
+  }
+
+
+           .empAereas_cont{
+             display: flex;
+             flex-direction: column;
+             margin: 10px 5px 10px 10px;
+             width: 30%;
+           }
+
+           .fechaSalida{
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+           }
+
+           .fechaSalida h4{
+            width: 100px;
+           }
+
+           .fechaS{
+            width: 105px;
+            height: 20px;
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            color: #2b2828;
+            font-weight: bold;
+            margin-left: 5px;
+           }
+
+           .empAereas{
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+           }
+
+           .empAereas img{
+             width: 50px;
+           }
+
+
+           .detalleV{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 5px 10px 5px;
+            width: 40%;
+           }
+
+           .orige_dest{
+            width: 150px;
+            margin-top: 15px;
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            color: #2b2828;
+            font-weight: bold;
+            margin-left: 9px;
+           }
+
+           .horaduracV{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 15px;
+           }
+
+           .HoraSal{
+            width: 65px;
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            color: #2b2828;
+            font-weight: bold;
+            /* margin-right: 4px; */
+           }
+
+            .HoraLleg{
+            width: 65px;
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            color: #2b2828;
+            font-weight: bold;
+            margin-left: 8px;
+           }
+
+           .Duracion{
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+           }
+
+           .duracVuel{
+            width: 95px;
+            height: 20px;
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            color: #2b2828;
+            font-weight: bold;
+            margin-left: 8px;
+           }
+
+           .precioV{
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            width: 30%;
+            background-color: transparent;
+            border: none;
+          }
+
+          .disponibles{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+          }
+
+          .disponibles h5{
+            font-size: 13px;
+            color: #332f2f;
+            margin-bottom: 4px;
+          }
+          .asientDisp{
+            width: 25px;
+            height: 18px;
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            color: #2b2828;
+            font-weight: bold;
+          }
+
+          .precioV h5{
+            margin-top: 3px;
+            text-align: end;
+          }
+
+          .precio{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 5px;
+            margin-top: -40px;
+            margin-bottom: -30px;
+          }
+
+          .linea{
+            color: #353636;
+            margin: 0px;
+            text-align: right;
+          }
+
+          .precXper, .precTotal{
+            width: 65px;
+            height: 18px;
+            text-align: end;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            color: #2b2828;
+            font-weight: bold;
+          }
+
+          .total{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 5px;
+            margin-top: -15px;
+            margin-bottom: -5px;
+          }
+          .txtTot{
+            text-align: center;
+            color: #000000;
+          }
+
+          .btnReservaI{
+            border-radius: 10px;
+            background-color: transparent;
+            border-bottom: 4px solid #01102e;
+            font-size: 16px;
+            margin-left: 130px;
+          }
+
+          .btnReservaR{
+            border-radius: 10px;
+            background-color: transparent;
+            border-bottom: 4px solid #01102e;
+            font-size: 16px;
+            margin-left: 130px;
+          }
+/*termina estios de paso 1*/
+
+.paso2 {
+    margin-right: 20px;
+}
+
+.infoPasajero {
+    margin-bottom: 20px;
+}
+
+.legC{
+  color: #fff;
+}
+
+.field-holder{
+  position: relative;
+  margin-bottom: 1.25em;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.inputP{
+  border:#0031486e;
+  outline: none;
+  background: #a9d4f7;
+  border-radius: 6px;
+}
+
+.labelI{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #003148;
+  display: flex;
+  align-items: center;
+  cursor: text;
+}
+
+.inputP, .labelI{
+  font-size: 1em;
+  width: 100%;
+  height: 55px;
+  color: #003148;
+  padding-left: 5px;
+ 
+  
+}
+
+.inputP:focus + .labelI,
+.inputP:valid + .labelI{
+  color: #0059808b;
+  font-size: 1em;
+  top: -25px;
+  pointer-events: none;
+  padding-top: 10px;
+}
+
+.lineFielS{
+color: #fff;
+width: 90%;
+}
+
+.paso3{
+  background: #fff;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.BOTON{
+ display: flex;
+ flex-direction: column;
+}
+
+.BTN, a .BTN1{
+  background-color: #0031486e;
+  width: 100%;
+  border: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+.BTN:hover, BTN1:hover{
+  background-color: #0059808b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ESTILOS DE BTN CONTINUAR RESERVA*/
+
+.botonContinuar{
+    margin: 10px 38px 0px 10px;
+    float: right;
+}
+.btnContReserva{
+  margin-top: 30px;
+  margin-left: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #001e2c; /* Cambia el color de fondo a tu elección */
+    color: #fff; /* Cambia el color del texto a tu elección */
+    border: none;
+    border-radius: 5px; /* Aplica un borde redondeado */
+    padding: 10px 20px; /* Ajusta el espaciado interno para la forma y el tamaño */
+    font-size: 20px; /* Tamaño del texto */
+    cursor: pointer;
+}
+
+
+.btnContReserva:hover {
+    background-color: #ffffff; /* Cambia el color de fondo a tu elección */
+color: #001e2c;
+}
+/*TERMINA ESTILO DE BOTON CONTINUAR RESERVA*/
+
+/*calsula precio de la RESERVA*/
+  .tuReserva{
+    width: 20%;
+    justify-content: center;
+    margin-top: 140px;
+  }
+
+  .tuReserva section{
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+.info{
+  width: 40%;
+  margin-left: 0;
+  padding-left: 4.5%;
+}
+
+           
+
+           .textReserva2{
+            color: #302e2e;
+           }
+
+           .textReserva{
+            color: #01102e;
+            margin: 5px 0px 5px 0px;
+           }
+
+           .detallesReser{
+            margin: 10px 10px 10px 10px;
+            padding: 10px;
+           }
+
+           .boletoR{
+            padding: 5px;
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            border-top: 2px solid hsla(0, 4%, 15%, 0.5);
+           }
+
+            .boletoS{
+            padding: 5px;
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            border-top: 2px solid hsla(0, 4%, 15%, 0.5);
+           }
+
+           .boletoR .horalugar, .boletoS .horalugar{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            /* margin: 10px 10px 0px 0px; */
+           
+           }
+
+           .horalugarO, .horalugarD{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: -18px;
+           }
+
+           .lugarOrig, .lugarDes{
+            width: 80px;
+            height: 18px;
+            text-align:center;
+            background-color: transparent;
+            border: none;
+            font-size: 15px;
+            color: #2b2828;
+            font-weight: bold;
+           }
+
+           .horavueloSI, .horavueloLI, .horavueloSR, .horavueloLR{
+            width: 80px;
+            height: 18px;
+            text-align: center;
+            background-color: transparent;
+            border: none;
+            font-size: 15px;
+            color: #2b2828;
+            font-weight: bold;
+           }
+
+           .fechavueloSI, .fechavueloSR{
+            width: 120px;
+            height: 18px;
+            background-color: transparent;
+            border: none;
+            font-size: 15px;
+            color: #2b2828;
+            font-weight: bold;
+           }
+
+           .Pasajeros{
+            margin: 10px 10px 10px 10px;
+            padding: 10px;
+           }
+
+           .Pasajeros div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: auto;
+            border-top: 2px solid hsla(0, 4%, 15%, 0.5);
+            margin: 0px 5px 0px 5px;
+            gap: 5px;
+           }
+
+           .catPasj{
+            width: 30px;
+            height: 18px;
+            text-align: end;
+            background-color: transparent;
+            border: none;
+            font-size: 15px;
+            color: #2b2828;
+            font-weight: bold;
+           }
+           
+           .CostosVuel{
+            display: none;
+            margin: 10px 10px 10px 10px;
+            flex-direction: column;
+            padding: 10px;
+           }
+           .boleta{
+            border-top: 2px solid hsla(0, 4%, 15%, 0.5);
+            border-bottom: 2px solid hsla(0, 4%, 15%, 0.5);
+            margin: 5px 5px 5px 5px;
+           }
+
+
+           .boleta div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+           }
+
+           .totCosVuelo{
+            display: flex;
+            flex-direction: row;
+            text-align: end;
+           }
+
+
+
+           .tarifBase, .desc, .imp, .totVuelo{
+            width: 80px;
+            height: 18px;
+            text-align: end;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            color: #2b2828;
+            font-weight: bold;
+           }
+
+
+           .Tot{
+            display: none;
+            flex-direction: row;
+            margin: 10px 10px;
+           }
+
+           .preciosoles{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            /* margin-left: 40px; */
+            gap: 0px;
+           }
+
+           .totAcum{
+            width: 75px;
+            height: 18px;
+           }
+
+.infextracont{
+  
+  text-align: center;
+}
+
+.infextracont h3{
+  font-size: 30px;
+  color: #01131b;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.infextra{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin: 10px 100px 40px 100px;
+    /* margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px; */
+}
+
+.razon1 , .razon2 , .razon3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  transition: box-shadow 0.3s;
+  border-radius: 10px;
+  height: 320px;
+  width: 25%;
+}
+
+.razon1:hover, .razon2:hover , .razon3:hover{
+  height: 325px;
+  width: 25.5%;
+}
+
+.razon1 p, .razon2 p, .razon3 p{
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center;
+  margin-top: -10px;
+  margin-right: 23px;
+  margin-left: 23px;
+}
+
+.razon1 h4, .razon2 h4, .razon3 h4{
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.razon1 img{
+  /* height: 70px; */
+  width: 110px;
+}
+
+.razon2 img{
+   height: 130px; 
+}
+
+.razon3 img{
+  width: 200px;
+}
+
+
+
+
